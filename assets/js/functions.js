@@ -29,6 +29,5 @@ $(document).ready(function(){
 	  currentContext.toggleClass("active");
 	  currentContext = $(this);
 	  currentContext.toggleClass("active");
-
    });
 });
