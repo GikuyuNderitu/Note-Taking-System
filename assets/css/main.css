@@ -267,8 +267,9 @@ th {
 }
 
 .note-toggle {
+  cursor: pointer;
   position: fixed;
-  z-index: -1;
+  z-index: 1;
   right: 0px;
   top: 20vh;
   background-color: #0066ff;
@@ -279,16 +280,22 @@ th {
   height: 100px;
   margin: 0px;
   padding: 5px;
+}
+
+.note-toggle a {
   text-decoration: none;
   color: white;
+}
+
+.note-toggle a:visited {
+  color: white;
+}
+
+.note-toggle a .open {
   text-align: center;
   margin: 0 auto;
   padding: 0;
   -webkit-transform: rotate(-90deg) translate(-53px);
       -ms-transform: rotate(-90deg) translate(-53px);
           transform: rotate(-90deg) translate(-53px);
-}
-
-.note-toggle:visited {
-  color: white;
 }
