@@ -1,14 +1,108 @@
 .note-main
-		border: solid 1px black
-		position: absolute
-		z-index: 20
-		right: 0
-		width: 400px
-		height: inherit
-		background-color: rgba(214,214,214,1)
-		box-shadow: 9px 8px 50px 0 #666
-		transition: right 1s
-		border-radius: 2px 0 0 100px
+   border: solid 1px black
+   position: absolute
+   z-index: 20
+   right: 0
+   width: 400px
+   height: inherit
+   background-color: rgba(214,214,214,1)
+   box-shadow: 9px 8px 50px 0 #666
+   transition: right 1s
+   border-radius: 2px 0 0 100px
 
-		&.closeNotes
-		   right: -450px
+   &.closeNotes
+      right: -450px
+
+   .note-head
+      position: relative
+      right: 0
+      top: 5px
+      margin-right: 20px
+      height: 15px
+
+      a
+         font-size: 12px
+
+         &:visited
+            color: blue
+
+   .note-content
+      margin: 6px
+
+      .note-title
+         font: normal normal bold 15px 'Source Sans Pro', sans-serif
+         margin-top: 0px
+         margin-bottom: 0px
+         padding: 0px
+         text-decoration: underline
+         text-align: center
+
+         h1
+            margin: 5px
+
+      .note-references
+         margin-top: 0
+         font: normal normal 600 13px 'Source Sans Pro', sans-serif
+
+         a
+            &:visited
+               color: blue
+
+         .instruction-section
+            display: block
+
+            &.hideDiv
+               display: none
+
+         .flag-section
+            display: block
+
+            &.hideDiv
+               display: none
+
+
+      .note-body
+         .entry-div
+            font: normal normal 600 18px 'Source Sans Pro', sans-serif
+
+            #note-input
+               margin-top: 2px
+               .note-data
+                  #text-entry
+                     font: normal normal 400 18px 'Source Sans Pro', sans-serif
+                     padding: 0
+                     width: 100%
+                     height: 60px
+
+                  #note-modifiers
+                     select
+                        width: 45%
+                        margin: 2px
+                        padding: 0
+                        height: 30px
+
+                     #date-time
+                        position: relative
+                        width: 45%
+                        height: 25px
+                        left: 6px
+
+                     span
+                        cursor: pointer
+                        position: relative
+                        z-index: 11
+                        right: 20px
+
+                  #note-submit
+                     float: right
+                     height: 25px
+
+
+
+      .note-context
+         scroll: auto
+
+         &.tech-context
+         &.ert-context
+         &.sales-context
+         &.all-context
