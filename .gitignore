@@ -2,3 +2,5 @@
 *.cfg
 README.html
 Prepros Build/
+assets/css/main.css
+index.html
