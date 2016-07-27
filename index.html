@@ -1,72 +1,79 @@
 
-<!--output:index.html-->
-<div class="container">
-  <div class="note-toggle"><a href="#">
-      <div class="open"><span>Notes</span></div></a></div>
-  <div class="note-section">
-    <div class="note-tabs">
-      <div class="all-tab tab">
-        <div class="label"><span>All</span></div>
-      </div>
-      <div class="tech-tab tab active">
-        <div class="label"><span>Tech</span></div>
-      </div>
-      <div class="ert-tab tab">
-        <div class="label"><span>ERT</span></div>
-      </div>
-      <div class="install-tab tab">
-        <div class="label"><span>Installs</span></div>
-      </div>
-      <div class="sales-tab tab">
-        <div class="label"><span>Sales</span></div>
-      </div>
-    </div>
-    <div class="note-main">
-      <div class="note-head"><a href="#toggle-close" class="close">close notes</a></div>
-      <div class="note-content">
-        <div class="note-title">
-          <h1>BK #5000 Albequerqe</h1>
+<!--output:index.html--><!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Notes</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="note-toggle"><a href="#">
+        <div class="open"><span>Notes</span></div></a></div>
+    <div class="note-section">
+      <div class="note-tabs">
+        <div class="all-tab tab">
+          <div class="label"><span>All</span></div>
         </div>
-        <div class="note-references"><a href="#" id="instruction-toggle">Support Instructions</a><span> |</span><a href="#" id="flag-toggle">Site Flags</a>
-          <div class="instruction-section hideDiv"></div>
-          <div class="flag-section">
-            <form id="site-flags" action="post">
-              <input type="checkbox" id="maint-flag"/><span> Maintenance Flag</span><br/>
-              <input type="checkbox" id="ert-urg"/><span> ERT Urgent</span><br/>
-              <input type="checkbox" id="ert-unrev"/><span> ERT Unreviewable</span><br/>
-              <input type="checkbox" id="ert-iss"/><span> ERT Issue</span><br/>
-              <input type="checkbox" id="ert-res"/><span> ERT Issue Resolved</span>
-            </form>
-          </div>
+        <div class="tech-tab tab active">
+          <div class="label"><span>Tech</span></div>
         </div>
-        <div class="note-body">
-          <div class="entry-div">
-            <form id="note-input">
-              <fieldset class="note-data">
-                <legend>Note Entry</legend>
-                <textarea id="text-entry" type="text" placeholder="Note goes here"></textarea><br/>
-                <div id="note-modifiers">
-                  <select name="action_type">
-                    <option value="Action_Taken">Action Taken</option>
-                    <option value="Issue_Diagnosis">Issue Diagnosis</option>
-                    <option value="Shipping_Request">Shipping Request</option>
-                    <option value="Comment">Comment</option>
-                    <option value="Stuck">Stuck</option>
-                    <option value="Event_Review">Event Review</option>
-                    <option value="Unreviewable">Unreviewable</option>
-                    <option value="Resolution">Resolution</option>
-                  </select>
-                  <input id="date-time"/><span><i class="fa fa-calendar"></i></span><br/>
-                  <input id="note-submit" type="submit" value="Add Note"/>
-                </div>
-              </fieldset>
-            </form>
+        <div class="ert-tab tab">
+          <div class="label"><span>ERT</span></div>
+        </div>
+        <div class="install-tab tab">
+          <div class="label"><span>Installs</span></div>
+        </div>
+        <div class="sales-tab tab">
+          <div class="label"><span>Sales</span></div>
+        </div>
+      </div>
+      <div class="note-main">
+        <div class="note-head"><a href="#toggle-close" class="close">close notes</a></div>
+        <div class="note-content">
+          <div class="note-title">
+            <h1>BK #5000 Albequerqe</h1>
           </div>
-          <div class="note-context tech-context">
-            <div class="new-line"></div>
+          <div class="note-references"><a href="#" id="instruction-toggle">Support Instructions</a><span> |</span><a href="#" id="flag-toggle">Site Flags</a>
+            <div class="instruction-section hideDiv"></div>
+            <div class="flag-section">
+              <form id="site-flags" action="post">
+                <input type="checkbox" id="maint-flag"><span> Maintenance Flag</span><br>
+                <input type="checkbox" id="ert-urg"><span> ERT Urgent</span><br>
+                <input type="checkbox" id="ert-unrev"><span> ERT Unreviewable</span><br>
+                <input type="checkbox" id="ert-iss"><span> ERT Issue</span><br>
+                <input type="checkbox" id="ert-res"><span> ERT Issue Resolved</span>
+              </form>
+            </div>
+          </div>
+          <div class="note-body">
+            <div class="entry-div">
+              <form id="note-input">
+                <fieldset class="note-data">
+                  <legend>Note Entry</legend>
+                  <textarea id="text-entry" type="text" placeholder="Note goes here"></textarea><br>
+                  <div id="note-modifiers">
+                    <select name="action_type">
+                      <option value="Action_Taken">Action Taken</option>
+                      <option value="Issue_Diagnosis">Issue Diagnosis</option>
+                      <option value="Shipping_Request">Shipping Request</option>
+                      <option value="Comment">Comment</option>
+                      <option value="Stuck">Stuck</option>
+                      <option value="Event_Review">Event Review</option>
+                      <option value="Unreviewable">Unreviewable</option>
+                      <option value="Resolution">Resolution</option>
+                    </select>
+                    <input id="date-time"><span><i class="fa fa-calendar"></i></span><br>
+                    <input id="note-submit" type="submit" value="Add Note">
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="note-context tech-context">
+              <div class="new-line"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</body>
