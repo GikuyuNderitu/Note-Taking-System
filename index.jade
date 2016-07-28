@@ -70,21 +70,23 @@ body
 									textarea(id="text-entry" type="text" placeholder="Note goes here")
 									br
 									#note-modifiers
-										select(name="action_type")
-											option(value="Action_Taken") Action Taken
-											option(value="Issue_Diagnosis") Issue Diagnosis
-											option(value="Shipping_Request") Shipping Request
-											option(value="Comment") Comment
-											option(value="Stuck") Stuck
-											option(value="Event_Review") Event Review
-											option(value="Unreviewable") Unreviewable
-											option(value="Resolution") Resolution
-
-										input#date-time
-										span
-											i.fa.fa-calendar
+										.action-field
+											select(name="action_type")
+												option(value="Action_Taken") Action Taken
+												option(value="Issue_Diagnosis") Issue Diagnosis
+												option(value="Shipping_Request") Shipping Request
+												option(value="Comment") Comment
+												option(value="Stuck") Stuck
+												option(value="Event_Review") Event Review
+												option(value="Unreviewable") Unreviewable
+												option(value="Resolution") Resolution
+										.date-field
+											input#date-time(placeholder = "MM/DD/YY" readonly)
+											span
+												i.fa.fa-calendar
 										br
-										input(id="note-submit" type="submit" value="Add Note")
+										.submit-button
+											input(id="note-submit" type="submit" value="Add Note")
 										
 						.note-context.tech-context
 							.new-line
