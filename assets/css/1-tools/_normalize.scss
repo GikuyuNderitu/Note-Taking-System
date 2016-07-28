@@ -135,6 +135,9 @@ textarea {
   font: inherit;
   margin: 0;
 }
+	&:focus{
+		outline: none;
+	}
 
 button {
   overflow: visible;
