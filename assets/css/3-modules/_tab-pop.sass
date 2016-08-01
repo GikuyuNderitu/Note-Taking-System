@@ -6,7 +6,7 @@
 	  left: -20px
 	0%,100%
 	  width: initial
-	  left: 7px
+	  left: -7px
 
 .container
 		.note-section
@@ -26,6 +26,7 @@
 							 border-radius: 30px 0 0 5px
 							 box-shadow: -2px 10px 10px #000
 							 transition: color .02s, box-shadow .2s, background-color .2s
+							 text-align: center
 
 							 &.active
 									 position: relative
@@ -47,7 +48,7 @@
 							 padding: 0
 
 							 .label
-									 transform: rotate(-90deg) translate(-20px, -25px)
+									 transform: rotate(-90deg) translate(-30px, -25px)
 
 
 					 .ert-tab
@@ -56,16 +57,17 @@
 							 padding: 0
 
 							 .label
-									 transform: rotate(-90deg) translate(-10px,-25px)
+									 transform: rotate(-90deg) translate(-25px,-25px)
 
 
 					 .sales-tab
 							 height: 100px
 							 margin: 0
 							 padding: 0
+							 font: normal normal bold 20px/16px $noteFont
 
 							 .label
-									 transform: rotate(-90deg) translate(-25px,-25px)
+									 transform: rotate(-90deg) translate(-39px,-25px)
 
 					 .install-tab
 							 height: $tabHeight
@@ -82,4 +84,4 @@
 							 padding: 0
 
 							 .label
-									 transform: rotate(-90deg) translate(-5px,-25px)
+									 transform: rotate(-90deg) translate(-30px,-25px)
