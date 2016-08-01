@@ -1,0 +1,79 @@
+.note-toggle
+	a(href="#")
+		.open
+			span Notes
+			
+.note-section
+	.note-tabs
+		.all-tab.tab
+			.label
+				span All
+		.tech-tab.tab.active
+			.label
+				span Tech
+		.ert-tab.tab
+			.label
+				span ERT
+		.install-tab.tab
+			.label
+				span Installs
+		.sales-tab.tab
+			.label
+				span Site Description
+
+	.note-main
+		.note-head
+			a(class="close" href="#toggle-close") close notes
+		.note-content
+			.note-title
+				h1 BK #5000 Albequerqe
+			.note-references
+				a(href="#" id="instruction-toggle") Support Instructions
+				span  |
+				a(href="#" id="flag-toggle") Site Flags
+				.instruction-section.hideDiv
+				.flag-section
+					form#site-flags(action="post")
+						input(type="checkbox" id="maint-flag")
+						span  Maintenance Flag
+						br
+						input(type="checkbox" id="ert-urg")
+						span  ERT Urgent
+						br
+						input(type="checkbox" id="ert-unrev")
+						span  ERT Unreviewable
+						br
+						input(type="checkbox" id="ert-iss")
+						span  ERT Issue
+						br
+						input(type="checkbox" id="ert-res")
+						span  ERT Issue Resolved
+						
+			.note-body
+				.entry-div
+					form#note-input()
+						fieldset.note-data
+							legend Note Entry
+							textarea(id="text-entry" type="text" placeholder="Note goes here")
+							br
+							#note-modifiers
+								.action-field
+									select(name="action_type")
+										option(value="Action_Taken") Action Taken
+										option(value="Issue_Diagnosis") Issue Diagnosis
+										option(value="Shipping_Request") Shipping Request
+										option(value="Comment") Comment
+										option(value="Stuck") Stuck
+										option(value="Event_Review") Event Review
+										option(value="Unreviewable") Unreviewable
+										option(value="Resolution") Resolution
+								.date-field
+									input#date-time(placeholder = "MM/DD/YY" readonly)
+									span
+										i.fa.fa-calendar
+								br
+								.submit-button
+									input(id="note-submit" type="submit" value="Add Note")
+								
+				.note-context.tech-context
+					.new-line
