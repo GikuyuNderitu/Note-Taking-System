@@ -1,2 +1,108 @@
-.logo-area
-   height: 60px
+.page-header
+   .header-top
+      .logo-area
+         height: 60px
+
+      .login-area
+         height: 30px
+         //background-color: gray
+         text-align: center
+         position: relative
+
+         .textbox
+            width: 50%
+            text-align: center
+            margin: 0 auto
+            position: absolute
+            top: 50%
+            transform: translate(50%,-50%)
+
+            ul
+
+               li
+                  display: inline-block
+                  width: auto
+                  color: blue
+
+                  &:first-of-type
+                     margin-right: 15px
+                  span#user-type
+                     color: black
+
+                  a
+                     color: blue
+                     text-decoration: none
+
+                     &:visited
+                        color: blue
+   .access-level
+      position: relative
+      background-color: $bordercolor
+      margin-top: 20px
+      color: white
+
+      .nav
+         ul
+            li
+               display: inline-block
+               width:150px
+               border-radius: 5px 5px 5px 5px
+               box-shadow: 0 0 0 0
+               text-align: center
+               transition: box-shadow 175ms ease-out
+               a
+                  color: inherit
+                  text-decoration: none
+                  box-shadow: 0 0 0 0
+                  font-size: 16px
+                  font-weight: bold
+
+                  &:visited
+                     color: inherit
+
+               &:hover
+                  background-color: lighten($bordercolor,20%)
+                  box-shadow: 5px 5px 9px $gray
+
+                  a
+                     color: $dingywhite
+
+                     &:visited
+                        color: darken($dingywhite,80%)
+   .action-level
+      position: relative
+      opacity: .2
+      background-color: lighten($bordercolor,30%)
+      transition: all 150ms ease-in-out
+
+      &:hover
+         opacity: .9
+
+      .action-nav
+         ul
+            li
+               display: inline-block
+               width:150px
+               border-radius: 5px 5px 5px 5px
+               box-shadow: 0 0 0 0
+               text-align: center
+               transition: box-shadow 175ms ease-out
+               a
+                  color: inherit
+                  text-decoration: none
+                  box-shadow: 0 0 0 0
+                  font-size: 16px
+                  font-weight: bold
+
+                  &:visited
+                     color: inherit
+
+               &:hover
+                  background-color: lighten($bordercolor,20%)
+                  box-shadow: 5px 5px 9px $gray
+
+                  a
+                     color: $dingywhite
+
+                     &:visited
+                        color: darken($dingywhite,80%)
