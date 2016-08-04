@@ -1,9 +1,29 @@
 header
 
-   .top-of-header
-      display: flex
-      justify-content: center
+	.top-of-header
+		display: flex
+		justify-content: space-between
 
-      .logo-area
+		.logo-area
 
-      .login-area
+		.login-area
+			background-color: lightgray
+
+			&> div
+				display: inline
+	@media screen and (min-width: 320px) and (max-width: 740px)
+		.top-of-header
+			display: block
+
+			.logo-area
+				margin-bottom: 10px
+			.login-area
+				height: auto
+
+				&>div
+					display: inline-block
+
+				.login-button
+					height: 50px
+					width: 100px
+					background-color: blue
