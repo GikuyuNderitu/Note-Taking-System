@@ -33,6 +33,7 @@ header
 					li
 						list-style: none
 						text-decoration: none
+						user-select: none
 
 						&.menu-item
 							align-items: center
@@ -90,6 +91,7 @@ header
 				padding: 0
 				width: 0
 				height: 15px
+				user-select: none
 
 				i.fa-times
 					padding: 3px
@@ -148,6 +150,15 @@ header
 			.action-level
 				display: flex
 				height: 100vh
+				width: 0
+
+				label
+					i.fa-times
+						font-size: 20px
+						margin: 8px 0 0 25px
+
+
+			#action-menu-toggle:checked + .action-level
 				width: 100vw
 
 	@media screen and (min-width: 481px) and (max-width: 960px)
@@ -163,15 +174,7 @@ header
 				width: 100vw
 				transition: height .5s cubic-bezier(0,1.54,.58,1.55)
 
-				label
-					display: block
-					background-color: red
-					margin: 5px 0 0 5px
-
-
-					i.fa-times
-						cursor: pointer
 
 			#action-menu-toggle:checked + .action-level
 				height: 150px
-				display: hidden
+				width: 100vw
