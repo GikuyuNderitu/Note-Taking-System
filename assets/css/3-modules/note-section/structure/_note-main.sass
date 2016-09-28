@@ -78,79 +78,79 @@
 					display: none
 
 
-		.note-body
-			.entry-div
-				font: normal normal 600 18px 'Source Sans Pro', sans-serif
+.note-body
+	.entry-div
+		font: normal normal 600 18px 'Source Sans Pro', sans-serif
 
-				#note-input
-					margin-top: 2px
-					.note-data
-						padding-bottom: 5px
-						border: 2px groove #666
-						#text-entry
-							font: normal normal 400 18px 'Source Sans Pro', sans-serif
-							padding: 0
+		#note-input
+			margin-top: 2px
+			.note-data
+				padding-bottom: 5px
+				border: 2px groove #666
+				#text-entry
+					font: normal normal 400 18px 'Source Sans Pro', sans-serif
+					padding: 0
+					width: 100%
+					height: 60px
+
+				#note-modifiers
+					margin-top: 3px
+					.action-field
+						margin: 0
+						padding: 0
+						display: inline-block
+						width: 49%
+						left: 20px
+
+						select
+							user-select: none
 							width: 100%
-							height: 60px
+							margin: 0
+							padding-left: 10px
+							height: 30px
+							float: left
+							border: 2px inset
+							border-radius: 10px 10px
 
-						#note-modifiers
-							margin-top: 3px
-							.action-field
-								margin: 0
-								padding: 0
-								display: inline-block
-								width: 49%
-								left: 20px
+					.date-field
+						margin: 0
+						padding: 0
+						display: inline-block
+						width: 49%
+						height: inherit
 
-								select
-									user-select: none
-									width: 100%
-									margin: 0
-									padding-left: 10px
-									height: 30px
-									float: left
-									border: 2px inset
-									border-radius: 10px 10px
+						#date-time
+							position: relative
+							float: right
+							margin: 0
+							width: 75%
+							height: 25px
+							border-radius: 10px 10px
+							padding-left: 30px
 
-							.date-field
-								margin: 0
-								padding: 0
-								display: inline-block
-								width: 49%
-								height: inherit
+						span
+							padding-top: 5px
+							cursor: pointer
+							position: absolute
+							z-index: 11
+							right: 35px
 
-								#date-time
-									position: relative
-									float: right
-									margin: 0
-									width: 75%
-									height: 25px
-									border-radius: 10px 10px
-									padding-left: 30px
-
-								span
-									padding-top: 5px
-									cursor: pointer
-									position: absolute
-									z-index: 11
-									right: 35px
-
-						.submit-button
-							width: 25%
-							margin: 0 auto
-							#note-submit
-								margin-top: 6px
-								float: right
-								height: 25px
-								border-radius: 10px 10px
-								padding-bottom: 22px
+				.submit-button
+					width: 25%
+					margin: 0 auto
+					#note-submit
+						margin-top: 6px
+						float: right
+						height: 25px
+						border-radius: 10px 10px
+						padding-bottom: 22px
 
 
 
-		.note-context
-			scroll: auto
+.note-context
+	scroll: auto
 
-			&.tech-context
-			&.ert-context
-			&.sales-context
-			&.all-context
+	&.tech-context
+	&.ert-context
+	&.sales-context
+	&.all-context
