@@ -69,13 +69,13 @@ var postNote = function(){
 	else{
 		currentContext.prepend(function(){
 			let newPost =
-				 "<hr/>"+
 				 "<div class='post'>"+
 					"<div class='postHead'>"+
 						"<strong>"+currentUser+"</strong>"+" -\t"+time+
 						"<br/><em>Type: "+type+"</em>"+
 					"</div>"+
 					"<p>"+noteVal+"</p>"+
+					"<hr/>"+
 				 "</div>";
 			return newPost;
 		});
