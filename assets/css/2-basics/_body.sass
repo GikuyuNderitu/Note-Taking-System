@@ -1,2 +1,18 @@
 body
-   font: normal normal 15px 'Source Sans Pro', sans-serif
+	font: normal normal 15px 'Source Sans Pro', sans-serif
+	overflow-x: hidden
+
+
+	&::-webkit-scrollbar
+		width: 10px
+		background-color: lighten($envysionorange,20%)
+
+	&::-webkit-scrollbar-track
+		box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+		background-color: gray
+		border-radius: 7px
+
+
+	&::-webkit-scrollbar-thumb
+		background-color: lightgray
+		border-radius: 5px
