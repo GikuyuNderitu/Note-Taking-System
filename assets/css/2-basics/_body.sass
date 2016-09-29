@@ -4,8 +4,12 @@ body
 
 
 	&::-webkit-scrollbar
-		width: 10px
-		background-color: lighten($envysionorange,20%)
+		width: 4px
+		transition: width 100ms
+
+		&:hover
+			width: 10px
+			background-color: lighten($envysionorange,20%)
 
 	&::-webkit-scrollbar-track
 		box-shadow: inset 0 0 6px rgba(0,0,0,.3)
