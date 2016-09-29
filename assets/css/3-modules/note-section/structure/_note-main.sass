@@ -79,78 +79,113 @@
 
 
 .note-body
-	.entry-div
-		font: normal normal 600 18px 'Source Sans Pro', sans-serif
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
 
-		#note-input
-			margin-top: 2px
-			.note-data
-				padding-bottom: 5px
-				border: 2px groove #666
-				#text-entry
-					font: normal normal 400 18px 'Source Sans Pro', sans-serif
+.entry-div
+	font: normal normal 600 18px 'Source Sans Pro', sans-serif
+
+	#note-input
+		margin-top: 2px
+		.note-data
+			padding-bottom: 5px
+			border: 2px groove #666
+			#text-entry
+				font: normal normal 400 18px 'Source Sans Pro', sans-serif
+				padding: 0
+				width: 100%
+				height: 60px
+
+			#note-modifiers
+				margin-top: 3px
+				.action-field
+					margin: 0
 					padding: 0
-					width: 100%
-					height: 60px
+					display: inline-block
+					width: 49%
+					left: 20px
 
-				#note-modifiers
-					margin-top: 3px
-					.action-field
+					select
+						user-select: none
+						width: 100%
 						margin: 0
-						padding: 0
-						display: inline-block
-						width: 49%
-						left: 20px
+						padding-left: 10px
+						height: 30px
+						float: left
+						border: 2px inset
+						border-radius: 10px 10px
 
-						select
-							user-select: none
-							width: 100%
-							margin: 0
-							padding-left: 10px
-							height: 30px
-							float: left
-							border: 2px inset
-							border-radius: 10px 10px
+				.date-field
+					margin: 0
+					padding: 0
+					display: inline-block
+					width: 49%
+					height: inherit
 
-					.date-field
-						margin: 0
-						padding: 0
-						display: inline-block
-						width: 49%
-						height: inherit
-
-						#date-time
-							position: relative
-							float: right
-							margin: 0
-							width: 75%
-							height: 25px
-							border-radius: 10px 10px
-							padding-left: 30px
-
-						span
-							padding-top: 5px
-							cursor: pointer
-							position: absolute
-							z-index: 11
-							right: 35px
-
-				.submit-button
-					width: 25%
-					margin: 0 auto
-					#note-submit
-						margin-top: 6px
+					#date-time
+						position: relative
 						float: right
+						margin: 0
+						width: 75%
 						height: 25px
 						border-radius: 10px 10px
-						padding-bottom: 22px
+						padding-left: 30px
 
+					span
+						padding-top: 5px
+						cursor: pointer
+						position: absolute
+						z-index: 11
+						right: 35px
+
+			.submit-button
+				width: 25%
+				margin: 0 auto
+				#note-submit
+					margin-top: 6px
+					float: right
+					height: 25px
+					border-radius: 10px 10px
+					padding-bottom: 22px
+.note-body-posts
+	width: 97%
+	height: 265px
+	background: darkgray
+	overflow-y: scroll
+
+	&::-webkit-scrollbar
+		width: 6px
+		background-color: lighten($envysionorange,20%)
+
+	&::-webkit-scrollbar-track
+		box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+		background-color: lighten($envysionorange,10%)
+		border-radius: 7px
+
+
+	&::-webkit-scrollbar-thumb
+		background-color: $envysionblue
+		border-radius: 5px
 
 
 .note-context
 	scroll: auto
+	display: none
+	width: 100%
+	background: white
 
-	&.tech-context
-	&.ert-context
-	&.sales-context
-	&.all-context
+	&.active
+		display: block
+
+		&.tech-context
+			background: lightblue
+		&.ert-context
+			background: yellow
+		&.sales-context
+			background: red
+		&.all-context
+			background: orange
+		&.install-context
+			background: blue
